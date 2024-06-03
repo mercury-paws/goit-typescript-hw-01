@@ -5,6 +5,6 @@
 //       return Object.assign(objA, objB);
 //     }
 
-function merge<T extends Record<string, any>>(objA: T, objB: T): T {
+function merge<T extends object>(objA: T, objB: T): T {
   return Object.assign(objA, objB);
 }
